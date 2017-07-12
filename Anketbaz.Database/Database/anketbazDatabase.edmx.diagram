@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="538846ac54304bc9a5a6bdbf5de46db6" Name="Diagram1" ZoomLevel="52">
+        <EntityTypeShape EntityType="anketbazModel.answer" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="anketbazModel.company" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="anketbazModel.guest" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="anketbazModel.guestanswer" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="anketbazModel.poll" Width="1.5" PointX="4.75" PointY="3.75" />
+        <EntityTypeShape EntityType="anketbazModel.question" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="anketbazModel.staff" Width="1.5" PointX="6.75" PointY="3.75" />
+        <EntityTypeShape EntityType="anketbazModel.user" Width="1.5" PointX="0.75" PointY="7.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

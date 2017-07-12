@@ -1,0 +1,12 @@
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Service\bin\RestaurantApp.Service.dll.config
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Service\bin\RestaurantApp.Service.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Service\bin\RestaurantApp.Service.pdb
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Service\bin\Newtonsoft.Json.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Service\bin\RestaurantApp.Data.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Service\bin\RestaurantApp.Database.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Service\bin\EntityFramework.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Service\bin\RestaurantApp.Database.pdb
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Service\bin\RestaurantApp.Data.pdb
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Service\obj\Release\RestaurantApp.Service.csprojResolveAssemblyReference.cache
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Service\obj\Release\RestaurantApp.Service.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Service\obj\Release\RestaurantApp.Service.pdb

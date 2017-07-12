@@ -1,0 +1,4 @@
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Library\bin\Debug\RestaurantApp.Library.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Library\bin\Debug\RestaurantApp.Library.pdb
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Library\obj\Debug\RestaurantApp.Library.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Library\obj\Debug\RestaurantApp.Library.pdb

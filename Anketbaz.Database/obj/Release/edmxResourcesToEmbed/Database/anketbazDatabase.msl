@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="anketbazModelStoreContainer" CdmEntityContainer="anketbazEntities">
+    <EntitySetMapping Name="answers">
+      <EntityTypeMapping TypeName="anketbazModel.answer">
+        <MappingFragment StoreEntitySet="answer">
+          <ScalarProperty Name="answertype" ColumnName="answertype" />
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="answerid" ColumnName="answerid" />
+          <ScalarProperty Name="questionid" ColumnName="questionid" />
+          <ScalarProperty Name="pollid" ColumnName="pollid" />
+          <ScalarProperty Name="ownertype" ColumnName="ownertype" />
+          <ScalarProperty Name="ownerid" ColumnName="ownerid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="companies">
+      <EntityTypeMapping TypeName="anketbazModel.company">
+        <MappingFragment StoreEntitySet="company">
+          <ScalarProperty Name="crtim" ColumnName="crtim" />
+          <ScalarProperty Name="crdat" ColumnName="crdat" />
+          <ScalarProperty Name="sector" ColumnName="sector" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="compid" ColumnName="compid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="guests">
+      <EntityTypeMapping TypeName="anketbazModel.guest">
+        <MappingFragment StoreEntitySet="guest">
+          <ScalarProperty Name="crtim" ColumnName="crtim" />
+          <ScalarProperty Name="crdat" ColumnName="crdat" />
+          <ScalarProperty Name="complatesecond" ColumnName="complatesecond" />
+          <ScalarProperty Name="fielddata" ColumnName="fielddata" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="guestid" ColumnName="guestid" />
+          <ScalarProperty Name="pollid" ColumnName="pollid" />
+          <ScalarProperty Name="ownertype" ColumnName="ownertype" />
+          <ScalarProperty Name="ownerid" ColumnName="ownerid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="guestanswers">
+      <EntityTypeMapping TypeName="anketbazModel.guestanswer">
+        <MappingFragment StoreEntitySet="guestanswer">
+          <ScalarProperty Name="guestid" ColumnName="guestid" />
+          <ScalarProperty Name="answerid" ColumnName="answerid" />
+          <ScalarProperty Name="questionid" ColumnName="questionid" />
+          <ScalarProperty Name="pollid" ColumnName="pollid" />
+          <ScalarProperty Name="ownertype" ColumnName="ownertype" />
+          <ScalarProperty Name="ownerid" ColumnName="ownerid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="polls">
+      <EntityTypeMapping TypeName="anketbazModel.poll">
+        <MappingFragment StoreEntitySet="poll">
+          <ScalarProperty Name="crtim" ColumnName="crtim" />
+          <ScalarProperty Name="crdat" ColumnName="crdat" />
+          <ScalarProperty Name="crusr" ColumnName="crusr" />
+          <ScalarProperty Name="viewcount" ColumnName="viewcount" />
+          <ScalarProperty Name="fielddata" ColumnName="fielddata" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="isshowresult" ColumnName="isshowresult" />
+          <ScalarProperty Name="ispassword" ColumnName="ispassword" />
+          <ScalarProperty Name="isprivate" ColumnName="isprivate" />
+          <ScalarProperty Name="isipcheck" ColumnName="isipcheck" />
+          <ScalarProperty Name="iscookiecheck" ColumnName="iscookiecheck" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="polltitle" ColumnName="polltitle" />
+          <ScalarProperty Name="ownertype" ColumnName="ownertype" />
+          <ScalarProperty Name="ownerid" ColumnName="ownerid" />
+          <ScalarProperty Name="pollid" ColumnName="pollid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="questions">
+      <EntityTypeMapping TypeName="anketbazModel.question">
+        <MappingFragment StoreEntitySet="question">
+          <ScalarProperty Name="content" ColumnName="content" />
+          <ScalarProperty Name="questiontype" ColumnName="questiontype" />
+          <ScalarProperty Name="questionid" ColumnName="questionid" />
+          <ScalarProperty Name="pollid" ColumnName="pollid" />
+          <ScalarProperty Name="ownertype" ColumnName="ownertype" />
+          <ScalarProperty Name="ownerid" ColumnName="ownerid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="staffs">
+      <EntityTypeMapping TypeName="anketbazModel.staff">
+        <MappingFragment StoreEntitySet="staff">
+          <ScalarProperty Name="crtim" ColumnName="crtim" />
+          <ScalarProperty Name="crdat" ColumnName="crdat" />
+          <ScalarProperty Name="authkey" ColumnName="authkey" />
+          <ScalarProperty Name="isadmin" ColumnName="isadmin" />
+          <ScalarProperty Name="active" ColumnName="active" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="staffid" ColumnName="staffid" />
+          <ScalarProperty Name="compid" ColumnName="compid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="anketbazModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="crtim" ColumnName="crtim" />
+          <ScalarProperty Name="crdat" ColumnName="crdat" />
+          <ScalarProperty Name="authkey" ColumnName="authkey" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

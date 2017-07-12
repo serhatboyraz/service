@@ -1,0 +1,5 @@
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Library\bin\Debug\Anketbaz.Library.dll
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Library\bin\Debug\Anketbaz.Library.pdb
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Library\obj\Debug\Anketbaz.Library.csprojResolveAssemblyReference.cache
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Library\obj\Debug\Anketbaz.Library.dll
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Library\obj\Debug\Anketbaz.Library.pdb

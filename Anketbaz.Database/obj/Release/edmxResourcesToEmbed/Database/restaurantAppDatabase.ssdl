@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="restaurantModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="category">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="clientid" />
+      <PropertyRef Name="parentid" />
+    </Key>
+    <Property Name="id" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="clientid" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="parentid" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="title" Type="varchar" MaxLength="80" />
+    <Property Name="image" Type="varchar" MaxLength="260" />
+    <Property Name="crdat" Type="varchar" MaxLength="8" />
+    <Property Name="crtim" Type="varchar" MaxLength="6" />
+    <Property Name="crusr" Type="varchar" MaxLength="4" />
+  </EntityType>
+  <EntityType Name="client">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="60" />
+    <Property Name="phone" Type="varchar" MaxLength="14" />
+    <Property Name="zipcode" Type="varchar" MaxLength="8" />
+    <Property Name="address" Type="varchar" MaxLength="350" />
+    <Property Name="imagecount" Type="int" />
+    <Property Name="datasize" Type="int" />
+    <Property Name="crdat" Type="varchar" MaxLength="8" />
+    <Property Name="crtim" Type="varchar" MaxLength="6" />
+    <Property Name="crusr" Type="varchar" MaxLength="4" />
+  </EntityType>
+  <EntityType Name="clientsetting">
+    <Key>
+      <PropertyRef Name="clientid" />
+      <PropertyRef Name="settingkey" />
+    </Key>
+    <Property Name="clientid" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="settingkey" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="settingvalue" Type="longtext" />
+  </EntityType>
+  <EntityType Name="numberrange">
+    <Key>
+      <PropertyRef Name="clientid" />
+      <PropertyRef Name="flag" />
+    </Key>
+    <Property Name="clientid" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="flag" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="numcount" Type="int" />
+    <Property Name="numlenght" Type="int" />
+  </EntityType>
+  <EntityType Name="order">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="clientid" />
+      <PropertyRef Name="userid" />
+    </Key>
+    <Property Name="id" Type="varchar" MaxLength="12" Nullable="false" />
+    <Property Name="clientid" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="userid" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="address" Type="varchar" MaxLength="350" />
+    <Property Name="lat" Type="decimal" Precision="9" Scale="6" />
+    <Property Name="lng" Type="decimal" Precision="9" Scale="6" />
+    <Property Name="firstname" Type="varchar" MaxLength="30" />
+    <Property Name="lastname" Type="varchar" MaxLength="30" />
+    <Property Name="orderdata" Type="longtext" />
+    <Property Name="printed" Type="varchar" MaxLength="1" />
+    <Property Name="sended" Type="varchar" MaxLength="1" />
+    <Property Name="viewed" Type="varchar" MaxLength="1" />
+    <Property Name="cancelled" Type="varchar" MaxLength="1" />
+    <Property Name="crdat" Type="varchar" MaxLength="8" />
+    <Property Name="crtim" Type="varchar" MaxLength="6" />
+    <Property Name="crusr" Type="varchar" MaxLength="4" />
+  </EntityType>
+  <EntityType Name="product">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="clientid" />
+    </Key>
+    <Property Name="id" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="clientid" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="categoryid" Type="varchar" MaxLength="6" />
+    <Property Name="title" Type="varchar" MaxLength="180" />
+    <Property Name="description" Type="mediumtext" />
+    <Property Name="price" Type="decimal" Precision="9" Scale="6" />
+    <Property Name="optionData" Type="text" />
+    <Property Name="imageData" Type="text" />
+    <Property Name="image" Type="varchar" MaxLength="260" />
+    <Property Name="crdat" Type="varchar" MaxLength="8" />
+    <Property Name="crtim" Type="varchar" MaxLength="6" />
+    <Property Name="crusr" Type="varchar" MaxLength="4" />
+  </EntityType>
+  <EntityType Name="staff">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="clientid" />
+    </Key>
+    <Property Name="id" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="clientid" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="32" />
+    <Property Name="firstname" Type="varchar" MaxLength="30" />
+    <Property Name="lastname" Type="varchar" MaxLength="30" />
+    <Property Name="phone" Type="varchar" MaxLength="14" />
+    <Property Name="mail" Type="varchar" MaxLength="25" />
+    <Property Name="address" Type="varchar" MaxLength="350" />
+    <Property Name="isadmin" Type="varchar" MaxLength="1" />
+    <Property Name="issuperadmin" Type="varchar" MaxLength="1" />
+    <Property Name="authkey" Type="varchar" MaxLength="18" />
+    <Property Name="crdat" Type="varchar" MaxLength="8" />
+    <Property Name="crtim" Type="varchar" MaxLength="6" />
+    <Property Name="crusr" Type="varchar" MaxLength="4" />
+  </EntityType>
+  <EntityType Name="superadmin">
+    <Key>
+      <PropertyRef Name="userid" />
+    </Key>
+    <Property Name="userid" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="32" />
+    <Property Name="name" Type="varchar" MaxLength="60" />
+    <Property Name="phone" Type="varchar" MaxLength="14" />
+    <Property Name="mail" Type="varchar" MaxLength="25" />
+    <Property Name="authkey" Type="varchar" MaxLength="18" />
+    <Property Name="crdat" Type="varchar" MaxLength="8" />
+    <Property Name="crtim" Type="varchar" MaxLength="6" />
+    <Property Name="crusr" Type="varchar" MaxLength="4" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="clientid" />
+      <PropertyRef Name="mail" />
+    </Key>
+    <Property Name="id" Type="varchar" MaxLength="8" Nullable="false" />
+    <Property Name="clientid" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="32" />
+    <Property Name="firstname" Type="varchar" MaxLength="30" />
+    <Property Name="lastname" Type="varchar" MaxLength="30" />
+    <Property Name="phone" Type="varchar" MaxLength="14" />
+    <Property Name="mail" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="address" Type="varchar" MaxLength="350" />
+    <Property Name="deviceid" Type="varchar" MaxLength="70" />
+    <Property Name="crdat" Type="varchar" MaxLength="8" />
+    <Property Name="crtim" Type="varchar" MaxLength="6" />
+    <Property Name="authkey" Type="varchar" MaxLength="18" />
+  </EntityType>
+  <EntityContainer Name="restaurantModelStoreContainer">
+    <EntitySet Name="category" EntityType="Self.category" Schema="restaurant" store:Type="Tables" />
+    <EntitySet Name="client" EntityType="Self.client" Schema="restaurant" store:Type="Tables" />
+    <EntitySet Name="clientsetting" EntityType="Self.clientsetting" Schema="restaurant" store:Type="Tables" />
+    <EntitySet Name="numberrange" EntityType="Self.numberrange" Schema="restaurant" store:Type="Tables" />
+    <EntitySet Name="order" EntityType="Self.order" Schema="restaurant" store:Type="Tables" />
+    <EntitySet Name="product" EntityType="Self.product" Schema="restaurant" store:Type="Tables" />
+    <EntitySet Name="staff" EntityType="Self.staff" Schema="restaurant" store:Type="Tables" />
+    <EntitySet Name="superadmin" EntityType="Self.superadmin" Schema="restaurant" store:Type="Tables" />
+    <EntitySet Name="user" EntityType="Self.user" Schema="restaurant" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,11 @@
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Database\bin\Debug\RestaurantApp.Database.dll.config
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Database\bin\Debug\RestaurantApp.Database.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Database\bin\Debug\RestaurantApp.Database.pdb
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Database\bin\Debug\EntityFramework.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Database\bin\Debug\LumiSoft.Net.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Database\bin\Debug\MySql.Data.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Database\bin\Debug\MySql.Data.Entity.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Database\bin\Debug\Newtonsoft.Json.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Database\obj\Debug\RestaurantApp.Database.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Database\obj\Debug\RestaurantApp.Database.pdb
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Database\obj\Debug\RestaurantApp.Database.csprojResolveAssemblyReference.cache

@@ -1,0 +1,12 @@
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Data\bin\Release\RestaurantApp.Data.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Data\bin\Release\RestaurantApp.Data.pdb
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Data\bin\Release\EntityFramework.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Data\bin\Release\LumiSoft.Net.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Data\bin\Release\MySql.Data.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Data\bin\Release\MySql.Data.Entity.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Data\bin\Release\Newtonsoft.Json.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Data\bin\Release\RestaurantApp.Database.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Data\bin\Release\RestaurantApp.Database.pdb
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Data\obj\Release\RestaurantApp.Data.csprojResolveAssemblyReference.cache
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Data\obj\Release\RestaurantApp.Data.dll
+D:\Enterprise Systems\KodOfisi Development\RestaurantApp\Service\RestaurantApp.Data\obj\Release\RestaurantApp.Data.pdb

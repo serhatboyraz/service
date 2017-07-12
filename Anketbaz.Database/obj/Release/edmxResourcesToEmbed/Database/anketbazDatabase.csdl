@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="anketbazModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="anketbazEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="answers" EntityType="anketbazModel.answer" />
+    <EntitySet Name="companies" EntityType="anketbazModel.company" />
+    <EntitySet Name="guests" EntityType="anketbazModel.guest" />
+    <EntitySet Name="guestanswers" EntityType="anketbazModel.guestanswer" />
+    <EntitySet Name="polls" EntityType="anketbazModel.poll" />
+    <EntitySet Name="questions" EntityType="anketbazModel.question" />
+    <EntitySet Name="staffs" EntityType="anketbazModel.staff" />
+    <EntitySet Name="users" EntityType="anketbazModel.user" />
+  </EntityContainer>
+  <EntityType Name="answer">
+    <Key>
+      <PropertyRef Name="answerid" />
+    </Key>
+    <Property Name="ownerid" Type="Int64" Nullable="false" />
+    <Property Name="ownertype" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="pollid" Type="Int64" Nullable="false" />
+    <Property Name="questionid" Type="Int64" Nullable="false" />
+    <Property Name="answerid" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="content" Type="String" MaxLength="280" FixedLength="false" Unicode="false" />
+    <Property Name="answertype" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="company">
+    <Key>
+      <PropertyRef Name="compid" />
+    </Key>
+    <Property Name="compid" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="sector" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="crdat" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="crtim" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="guest">
+    <Key>
+      <PropertyRef Name="guestid" />
+    </Key>
+    <Property Name="ownerid" Type="Int64" Nullable="false" />
+    <Property Name="ownertype" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="pollid" Type="Int64" Nullable="false" />
+    <Property Name="guestid" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ip" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="fielddata" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Name="complatesecond" Type="Int32" />
+    <Property Name="crdat" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="crtim" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="guestanswer">
+    <Key>
+      <PropertyRef Name="ownerid" />
+      <PropertyRef Name="ownertype" />
+      <PropertyRef Name="pollid" />
+      <PropertyRef Name="questionid" />
+      <PropertyRef Name="answerid" />
+      <PropertyRef Name="guestid" />
+    </Key>
+    <Property Name="ownerid" Type="Int64" Nullable="false" />
+    <Property Name="ownertype" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="pollid" Type="Int64" Nullable="false" />
+    <Property Name="questionid" Type="Int64" Nullable="false" />
+    <Property Name="answerid" Type="Int64" Nullable="false" />
+    <Property Name="guestid" Type="Int64" Nullable="false" />
+  </EntityType>
+  <EntityType Name="poll">
+    <Key>
+      <PropertyRef Name="pollid" />
+      <PropertyRef Name="ownerid" />
+      <PropertyRef Name="ownertype" />
+    </Key>
+    <Property Name="pollid" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ownerid" Type="Int64" Nullable="false" />
+    <Property Name="ownertype" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="polltitle" Type="String" MaxLength="180" FixedLength="false" Unicode="false" />
+    <Property Name="active" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="iscookiecheck" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="isipcheck" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="isprivate" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="ispassword" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="isshowresult" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="fielddata" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Name="viewcount" Type="Int32" />
+    <Property Name="crusr" Type="Int64" />
+    <Property Name="crdat" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="crtim" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="question">
+    <Key>
+      <PropertyRef Name="questionid" />
+    </Key>
+    <Property Name="ownerid" Type="Int64" Nullable="false" />
+    <Property Name="ownertype" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="pollid" Type="Int64" Nullable="false" />
+    <Property Name="questionid" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="questiontype" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="content" Type="String" MaxLength="280" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="staff">
+    <Key>
+      <PropertyRef Name="staffid" />
+    </Key>
+    <Property Name="compid" Type="Int64" Nullable="false" />
+    <Property Name="staffid" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="mail" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="phone" Type="String" MaxLength="13" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="name" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="active" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="isadmin" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="authkey" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="crdat" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="crtim" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="userid" />
+    </Key>
+    <Property Name="userid" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="mail" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="name" Type="String" MaxLength="120" FixedLength="false" Unicode="false" />
+    <Property Name="authkey" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="crdat" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="crtim" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

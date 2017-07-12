@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="restaurantModelStoreContainer" CdmEntityContainer="restaurantEntities">
+    <EntitySetMapping Name="numberranges">
+      <EntityTypeMapping TypeName="restaurantModel.numberrange">
+        <MappingFragment StoreEntitySet="numberrange">
+          <ScalarProperty Name="clientid" ColumnName="clientid" />
+          <ScalarProperty Name="flag" ColumnName="flag" />
+          <ScalarProperty Name="numcount" ColumnName="numcount" />
+          <ScalarProperty Name="numlenght" ColumnName="numlenght" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="orders">
+      <EntityTypeMapping TypeName="restaurantModel.order">
+        <MappingFragment StoreEntitySet="order">
+          <ScalarProperty Name="printed" ColumnName="printed" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="clientid" ColumnName="clientid" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="lat" ColumnName="lat" />
+          <ScalarProperty Name="lng" ColumnName="lng" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="orderdata" ColumnName="orderdata" />
+          <ScalarProperty Name="sended" ColumnName="sended" />
+          <ScalarProperty Name="viewed" ColumnName="viewed" />
+          <ScalarProperty Name="cancelled" ColumnName="cancelled" />
+          <ScalarProperty Name="crdat" ColumnName="crdat" />
+          <ScalarProperty Name="crtim" ColumnName="crtim" />
+          <ScalarProperty Name="crusr" ColumnName="crusr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="staffs">
+      <EntityTypeMapping TypeName="restaurantModel.staff">
+        <MappingFragment StoreEntitySet="staff">
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="clientid" ColumnName="clientid" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="isadmin" ColumnName="isadmin" />
+          <ScalarProperty Name="issuperadmin" ColumnName="issuperadmin" />
+          <ScalarProperty Name="authkey" ColumnName="authkey" />
+          <ScalarProperty Name="crdat" ColumnName="crdat" />
+          <ScalarProperty Name="crtim" ColumnName="crtim" />
+          <ScalarProperty Name="crusr" ColumnName="crusr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="superadmins">
+      <EntityTypeMapping TypeName="restaurantModel.superadmin">
+        <MappingFragment StoreEntitySet="superadmin">
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="authkey" ColumnName="authkey" />
+          <ScalarProperty Name="crdat" ColumnName="crdat" />
+          <ScalarProperty Name="crtim" ColumnName="crtim" />
+          <ScalarProperty Name="crusr" ColumnName="crusr" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="restaurantModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="authkey" ColumnName="authkey" />
+          <ScalarProperty Name="crtim" ColumnName="crtim" />
+          <ScalarProperty Name="crdat" ColumnName="crdat" />
+          <ScalarProperty Name="deviceid" ColumnName="deviceid" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="mail" ColumnName="mail" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="clientid" ColumnName="clientid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clientsettings">
+      <EntityTypeMapping TypeName="restaurantModel.clientsetting">
+        <MappingFragment StoreEntitySet="clientsetting">
+          <ScalarProperty Name="settingvalue" ColumnName="settingvalue" />
+          <ScalarProperty Name="settingkey" ColumnName="settingkey" />
+          <ScalarProperty Name="clientid" ColumnName="clientid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="categories">
+      <EntityTypeMapping TypeName="restaurantModel.category">
+        <MappingFragment StoreEntitySet="category">
+          <ScalarProperty Name="crusr" ColumnName="crusr" />
+          <ScalarProperty Name="crtim" ColumnName="crtim" />
+          <ScalarProperty Name="crdat" ColumnName="crdat" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="parentid" ColumnName="parentid" />
+          <ScalarProperty Name="clientid" ColumnName="clientid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="clients">
+      <EntityTypeMapping TypeName="restaurantModel.client">
+        <MappingFragment StoreEntitySet="client">
+          <ScalarProperty Name="zipcode" ColumnName="zipcode" />
+          <ScalarProperty Name="crusr" ColumnName="crusr" />
+          <ScalarProperty Name="crtim" ColumnName="crtim" />
+          <ScalarProperty Name="crdat" ColumnName="crdat" />
+          <ScalarProperty Name="datasize" ColumnName="datasize" />
+          <ScalarProperty Name="imagecount" ColumnName="imagecount" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="products">
+      <EntityTypeMapping TypeName="restaurantModel.product">
+        <MappingFragment StoreEntitySet="product">
+          <ScalarProperty Name="crusr" ColumnName="crusr" />
+          <ScalarProperty Name="crtim" ColumnName="crtim" />
+          <ScalarProperty Name="crdat" ColumnName="crdat" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="imageData" ColumnName="imageData" />
+          <ScalarProperty Name="optionData" ColumnName="optionData" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="categoryid" ColumnName="categoryid" />
+          <ScalarProperty Name="clientid" ColumnName="clientid" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

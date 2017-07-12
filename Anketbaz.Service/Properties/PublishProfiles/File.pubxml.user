@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Enterprise Systems\KodOfisi Development\AnketBaz\servicePublish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Anketbaz.Data.dll">
+      <publishTime>04/13/2017 00:08:36</publishTime>
+    </File>
+    <File Include="bin/Anketbaz.Database.dll">
+      <publishTime>04/12/2017 23:31:16</publishTime>
+    </File>
+    <File Include="bin/Anketbaz.Service.dll">
+      <publishTime>04/13/2017 00:08:37</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/15/2016 12:49:39</publishTime>
+    </File>
+    <File Include="bin/ICSharpCode.SharpZipLib.dll">
+      <publishTime>03/31/2017 20:11:21</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>10/15/2016 12:49:39</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.Entity.dll">
+      <publishTime>10/15/2016 12:49:39</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>10/15/2016 12:49:39</publishTime>
+    </File>
+    <File Include="bin/NPOI.dll">
+      <publishTime>03/31/2017 20:11:21</publishTime>
+    </File>
+    <File Include="bin/NPOI.OOXML.dll">
+      <publishTime>03/31/2017 20:11:21</publishTime>
+    </File>
+    <File Include="bin/NPOI.OpenXml4Net.dll">
+      <publishTime>03/31/2017 20:11:21</publishTime>
+    </File>
+    <File Include="bin/NPOI.OpenXmlFormats.dll">
+      <publishTime>03/31/2017 20:11:21</publishTime>
+    </File>
+    <File Include="DynamicService.svc">
+      <publishTime>12/02/2016 11:19:57</publishTime>
+    </File>
+    <File Include="FileService.svc">
+      <publishTime>12/02/2016 11:19:57</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>12/02/2016 11:19:57</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/04/2017 00:02:01</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

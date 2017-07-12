@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="restaurantModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="category">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="clientid" />
+      <PropertyRef Name="parentid" />
+    </Key>
+    <Property Name="id" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="clientid" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="parentid" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="title" Type="String" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Name="order" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+    <Property Name="crdat" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="crtim" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="client">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="phone" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="address" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="crdat" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="crtim" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="crusr" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="clientsetting">
+    <Key>
+      <PropertyRef Name="clientid" />
+      <PropertyRef Name="settingvalue" />
+    </Key>
+    <Property Name="clientid" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="settingvalue" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="settingkey" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="numberrange">
+    <Key>
+      <PropertyRef Name="clientid" />
+      <PropertyRef Name="flag" />
+    </Key>
+    <Property Name="clientid" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="flag" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="numcount" Type="Int32" />
+    <Property Name="numlenght" Type="Int32" />
+  </EntityType>
+  <EntityType Name="order">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="clientid" />
+      <PropertyRef Name="userid" />
+    </Key>
+    <Property Name="id" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="clientid" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="userid" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="lat" Type="Decimal" />
+    <Property Name="lng" Type="Decimal" />
+    <Property Name="firstname" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="lastname" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="orderdata" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" />
+    <Property Name="sended" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="viewed" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="cancelled" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="crdat" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="crtim" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="crusr" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="product">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="clientid" />
+      <PropertyRef Name="categoryid" />
+    </Key>
+    <Property Name="id" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="clientid" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="categoryid" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="title" Type="String" MaxLength="180" FixedLength="false" Unicode="false" />
+    <Property Name="description" Type="String" MaxLength="16777215" FixedLength="false" Unicode="false" />
+    <Property Name="price" Type="Decimal" />
+    <Property Name="optionData" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Name="imageData" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="staff">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="clientid" />
+    </Key>
+    <Property Name="id" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="clientid" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="firstname" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="lastname" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="phone" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="mail" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="address" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="isadmin" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="issuperadmin" Type="String" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="authkey" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="crdat" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="crtim" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="crusr" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="superadmin">
+    <Key>
+      <PropertyRef Name="userid" />
+    </Key>
+    <Property Name="userid" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Name="name" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="phone" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="mail" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="authkey" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="crdat" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="crtim" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Name="crusr" Type="String" MaxLength="4" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="clientid" />
+    </Key>
+    <Property Name="id" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="clientid" Type="String" MaxLength="4" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="firstname" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="lastname" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="phone" Type="String" MaxLength="14" FixedLength="false" Unicode="false" />
+    <Property Name="mail" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="address" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="devieid" Type="String" MaxLength="70" FixedLength="false" Unicode="false" />
+    <Property Name="crdat" Type="String" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Name="crtim" Type="String" MaxLength="6" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="restaurantEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="categories" EntityType="Self.category" />
+    <EntitySet Name="clients" EntityType="Self.client" />
+    <EntitySet Name="clientsettings" EntityType="Self.clientsetting" />
+    <EntitySet Name="numberranges" EntityType="Self.numberrange" />
+    <EntitySet Name="orders" EntityType="Self.order" />
+    <EntitySet Name="products" EntityType="Self.product" />
+    <EntitySet Name="staffs" EntityType="Self.staff" />
+    <EntitySet Name="superadmins" EntityType="Self.superadmin" />
+    <EntitySet Name="users" EntityType="Self.user" />
+  </EntityContainer>
+</Schema>

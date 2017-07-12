@@ -1,0 +1,15 @@
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Data\bin\Release\Anketbaz.Data.dll
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Data\bin\Release\Anketbaz.Data.pdb
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Data\bin\Release\Anketbaz.Database.dll
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Data\bin\Release\Anketbaz.Database.pdb
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Data\obj\Release\Anketbaz.Data.csprojResolveAssemblyReference.cache
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Data\obj\Release\Anketbaz.Data.dll
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Data\obj\Release\Anketbaz.Data.pdb
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Data\bin\Release\MySql.Data.dll
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Data\bin\Release\MySql.Data.Entity.dll
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Data\bin\Release\Newtonsoft.Json.dll
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Data\bin\Release\ICSharpCode.SharpZipLib.dll
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Data\bin\Release\NPOI.dll
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Data\bin\Release\NPOI.OOXML.dll
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Data\bin\Release\NPOI.OpenXml4Net.dll
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Data\bin\Release\NPOI.OpenXmlFormats.dll

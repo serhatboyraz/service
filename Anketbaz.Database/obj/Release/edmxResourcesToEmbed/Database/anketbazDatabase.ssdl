@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="anketbazModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="answer">
+    <Key>
+      <PropertyRef Name="answerid" />
+    </Key>
+    <Property Name="ownerid" Type="bigint" Nullable="false" />
+    <Property Name="ownertype" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="pollid" Type="bigint" Nullable="false" />
+    <Property Name="questionid" Type="bigint" Nullable="false" />
+    <Property Name="answerid" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="content" Type="varchar" MaxLength="280" />
+    <Property Name="answertype" Type="varchar" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="company">
+    <Key>
+      <PropertyRef Name="compid" />
+    </Key>
+    <Property Name="compid" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="varchar" MaxLength="100" />
+    <Property Name="sector" Type="varchar" MaxLength="100" />
+    <Property Name="crdat" Type="varchar" MaxLength="8" />
+    <Property Name="crtim" Type="varchar" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="guest">
+    <Key>
+      <PropertyRef Name="guestid" />
+    </Key>
+    <Property Name="ownerid" Type="bigint" Nullable="false" />
+    <Property Name="ownertype" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="pollid" Type="bigint" Nullable="false" />
+    <Property Name="guestid" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ip" Type="varchar" MaxLength="15" />
+    <Property Name="fielddata" Type="text" />
+    <Property Name="complatesecond" Type="int" />
+    <Property Name="crdat" Type="varchar" MaxLength="8" />
+    <Property Name="crtim" Type="varchar" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="guestanswer">
+    <Key>
+      <PropertyRef Name="ownerid" />
+      <PropertyRef Name="ownertype" />
+      <PropertyRef Name="pollid" />
+      <PropertyRef Name="questionid" />
+      <PropertyRef Name="answerid" />
+      <PropertyRef Name="guestid" />
+    </Key>
+    <Property Name="ownerid" Type="bigint" Nullable="false" />
+    <Property Name="ownertype" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="pollid" Type="bigint" Nullable="false" />
+    <Property Name="questionid" Type="bigint" Nullable="false" />
+    <Property Name="answerid" Type="bigint" Nullable="false" />
+    <Property Name="guestid" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="poll">
+    <Key>
+      <PropertyRef Name="pollid" />
+      <PropertyRef Name="ownerid" />
+      <PropertyRef Name="ownertype" />
+    </Key>
+    <Property Name="pollid" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ownerid" Type="bigint" Nullable="false" />
+    <Property Name="ownertype" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="polltitle" Type="varchar" MaxLength="180" />
+    <Property Name="active" Type="varchar" MaxLength="1" />
+    <Property Name="iscookiecheck" Type="varchar" MaxLength="1" />
+    <Property Name="isipcheck" Type="varchar" MaxLength="1" />
+    <Property Name="isprivate" Type="varchar" MaxLength="1" />
+    <Property Name="ispassword" Type="varchar" MaxLength="1" />
+    <Property Name="isshowresult" Type="varchar" MaxLength="1" />
+    <Property Name="password" Type="varchar" MaxLength="32" />
+    <Property Name="fielddata" Type="text" />
+    <Property Name="viewcount" Type="int" />
+    <Property Name="crusr" Type="bigint" />
+    <Property Name="crdat" Type="varchar" MaxLength="8" />
+    <Property Name="crtim" Type="varchar" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="question">
+    <Key>
+      <PropertyRef Name="questionid" />
+    </Key>
+    <Property Name="ownerid" Type="bigint" Nullable="false" />
+    <Property Name="ownertype" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="pollid" Type="bigint" Nullable="false" />
+    <Property Name="questionid" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="questiontype" Type="varchar" MaxLength="1" />
+    <Property Name="content" Type="varchar" MaxLength="280" />
+  </EntityType>
+  <EntityType Name="staff">
+    <Key>
+      <PropertyRef Name="staffid" />
+    </Key>
+    <Property Name="compid" Type="bigint" Nullable="false" />
+    <Property Name="staffid" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mail" Type="varchar" MaxLength="80" />
+    <Property Name="phone" Type="varchar" MaxLength="13" />
+    <Property Name="password" Type="varchar" MaxLength="32" />
+    <Property Name="name" Type="varchar" MaxLength="120" />
+    <Property Name="active" Type="varchar" MaxLength="1" />
+    <Property Name="isadmin" Type="varchar" MaxLength="1" />
+    <Property Name="authkey" Type="varchar" MaxLength="18" />
+    <Property Name="crdat" Type="varchar" MaxLength="8" />
+    <Property Name="crtim" Type="varchar" MaxLength="6" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="userid" />
+    </Key>
+    <Property Name="userid" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="mail" Type="varchar" MaxLength="80" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="32" />
+    <Property Name="name" Type="varchar" MaxLength="120" />
+    <Property Name="authkey" Type="varchar" MaxLength="18" />
+    <Property Name="crdat" Type="varchar" MaxLength="8" />
+    <Property Name="crtim" Type="varchar" MaxLength="6" />
+  </EntityType>
+  <EntityContainer Name="anketbazModelStoreContainer">
+    <EntitySet Name="answer" EntityType="Self.answer" Schema="pollman" store:Type="Tables" />
+    <EntitySet Name="company" EntityType="Self.company" Schema="pollman" store:Type="Tables" />
+    <EntitySet Name="guest" EntityType="Self.guest" Schema="pollman" store:Type="Tables" />
+    <EntitySet Name="guestanswer" EntityType="Self.guestanswer" Schema="pollman" store:Type="Tables" />
+    <EntitySet Name="poll" EntityType="Self.poll" Schema="pollman" store:Type="Tables" />
+    <EntitySet Name="question" EntityType="Self.question" Schema="pollman" store:Type="Tables" />
+    <EntitySet Name="staff" EntityType="Self.staff" Schema="pollman" store:Type="Tables" />
+    <EntitySet Name="user" EntityType="Self.user" Schema="pollman" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

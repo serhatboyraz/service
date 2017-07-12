@@ -1,0 +1,25 @@
+oOo ----------------------- oOo
+23:28:24.713
+Özel durum bir çağırma hedefi tarafından oluşturuldu.Giriş dizesi doğru biçimde değildi.Özel durum bir çağırma hedefi tarafından oluşturuldu.
+   konum: System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   konum: System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   konum: System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   konum: System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   konum: Anketbaz.Service.Core.DynamicService.CallServicePost(String serviceName, String methodName, String jsonParams) d:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Service\Core\DynamicService.cs içinde: satır 106
+Giriş dizesi doğru biçimde değildi.
+   konum: System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   konum: System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   konum: System.String.System.IConvertible.ToInt64(IFormatProvider provider)
+   konum: System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   konum: Newtonsoft.Json.Utilities.ConvertUtils.Convert(Object initialValue, CultureInfo culture, Type targetType)
+   konum: Newtonsoft.Json.Linq.JValue.JValueDynamicProxy.TryConvert(JValue instance, ConvertBinder binder, Object& result)
+   konum: CallSite.Target(Closure , CallSite , Object )
+   konum: System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   konum: Anketbaz.Data.Services.PollService.GetPersonnelPollList(Object jsonData) d:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Data\Services\PollService.cs içinde: satır 67
+
+oOo ----------------------- oOo
+23:29:45.370
+Analyse Time :0:0:0.159
+oOo ----------------------- oOo
+23:30:42.037
+Analyse Time :0:0:0.31

@@ -1,0 +1,38 @@
+CallService hata mesajlari
+0x0000 -> islem yapilamadi 	
+0x0001 -> veri base64 degil
+0x0002 -> service bulunamadi
+0x0003 -> method bulunamadi.	
+
+0x0004 -> user register mail kayitli.
+0x0005 -> User register bir hata olustu.
+0x0006 -> User mail/pass/name bos/4 karakterden az.
+
+
+0x0007 -> user incorrect
+0x0008 -> user not updated
+
+0x0009 -> user not logged
+
+0x0010 -> Poll not added (an error)
+0x0011 -> pollData bos gonderilemez.
+
+
+0x0012 -> poll bulunamadi.
+
+0x0013 -> guest eklenemedi.
+0x0014 -> guest answerlari eklenemedi.
+
+0x0015 ->company eklenemedi.
+
+0x0016 ->staff eklenemedi.
+
+0x0017 ->bu anket staff auth gerektirdiginden (private oldugundan) kullanici dogrulanamadi.
+0x0018 ->bu anket ip dogrulamasina sahip ve bu ipden anket doldurulmus.
+0x0019 ->poll update edilemedi
+0x0020 ->Bu anket aktif olmadigi icin doldurulmaya izin verilemez.
+
+0x0021 ->Sifre degistirir eski sifre yanlis.
+0x0022 ->Sifre degistirir sifre degistirilemedi.
+
+

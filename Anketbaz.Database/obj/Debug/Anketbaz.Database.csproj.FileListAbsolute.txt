@@ -1,0 +1,10 @@
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Database\bin\Debug\Anketbaz.Database.dll.config
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Database\bin\Debug\Anketbaz.Database.dll
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Database\bin\Debug\Anketbaz.Database.pdb
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Database\bin\Debug\EntityFramework.dll
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Database\obj\Debug\Anketbaz.Database.dll
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Database\obj\Debug\Anketbaz.Database.pdb
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Database\obj\Debug\Anketbaz.Database.csprojResolveAssemblyReference.cache
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Database\bin\Debug\MySql.Data.dll
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Database\bin\Debug\MySql.Data.Entity.dll
+D:\Enterprise Systems\KodOfisi Development\AnketBaz\service\Service\Anketbaz.Database\bin\Debug\Newtonsoft.Json.dll
