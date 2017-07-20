@@ -31,3 +31,8 @@ Dizin Yapısı
 >user : demo@user.com
 
 >pass : demo
+
+
+>Demo Anket için demo bilgileri:
+
+>url : http://pollman.kodofisi.com/#/main/10/3/P
